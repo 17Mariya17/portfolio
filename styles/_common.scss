@@ -2,11 +2,11 @@ $rounded-bottom: 0px 0px 12px 12px;
 $grey-1: #cacadb;
 $grey-2: #e7e7f2;
 $grey-3: #b3b3ba;
-$grey-4: #E6E6F0;
+$grey-4: #e6e6f0;
 $pink: #f0145a;
 $blue: #24a3ff;
 $blue-2: #323264;
-$navy-dark:#46466E;
+$navy-dark: #46466e;
 $lg: 992px;
 $xl: 1200px;
 $md: 768px;
@@ -17,54 +17,56 @@ $size-16px: 16px;
 $size-14px: 14px;
 $size-12px: 12px;
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Montserrat:wght@400;500;700&family=Poppins:wght@200;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Montserrat:wght@400;500;700&family=Poppins:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,500;10..100,800&family=League+Gothic&family=League+Script&family=Mrs+Saint+Delafield&family=Satisfy&display=swap");
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .margin-top-60px {
-    margin-top: 30px;
-    @media screen and (min-width: $sm) {
+  margin-top: 30px;
+  @media screen and (min-width: $sm) {
     margin-top: 60px;
-      }
+  }
 }
 
 .margin-bottom-60px {
-    margin-bottom: 30px;
-    @media screen and (min-width: $sm) {
+  margin-bottom: 30px;
+  @media screen and (min-width: $sm) {
     margin-bottom: 60px;
-      }
+  }
 }
 
 .margin-bottom-60-0px {
   margin-bottom: 0;
   @media screen and (min-width: $xl) {
-  margin-bottom: 60px;
-    }
+    margin-bottom: 60px;
+  }
 }
 
 .flex-1 {
-flex: 1;}
-
-.p-top-10{
-    padding-top: 10px;
+  flex: 1;
 }
 
-.p-top-15{
+.p-top-10 {
+  padding-top: 10px;
+}
+
+.p-top-15 {
   padding-top: 15px;
 }
 
-.p-top-30{
+.p-top-30 {
   padding-top: 30px;
 }
 
-.p-bottom-30{
-    padding-bottom: 30px;
+.p-bottom-30 {
+  padding-bottom: 30px;
 }
 
-.p-bottom-15{
-    padding-bottom: 15px;
+.p-bottom-15 {
+  padding-bottom: 15px;
 }
 
 a.link {
@@ -72,35 +74,15 @@ a.link {
 }
 
 .section-gradient {
-    margin-bottom: 30px;
-    @media screen and (min-width: $sm) {
+  margin-bottom: 30px;
+  @media screen and (min-width: $sm) {
     margin-bottom: 60px;
-      }
-  min-height: 100vh;
-  background: var(
-    --gradient-supersoft,
-    linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%)
-  );
-  border-radius: $rounded-bottom;
-  position: relative;
-  &__shadow {
-    height: 10px;
-    position: absolute;
-    width: 100%;
-    border-radius: $rounded-bottom;
-    &--1 {
-      bottom: -10px;
-      width: calc(100% - 40px);
-      left: 20px;
-      background-color: $grey-1;
-    }
-    &--2 {
-      bottom: -20px;
-      width: calc(100% - 80px);
-      left: 40px;
-      background-color: $grey-2;
-    }
   }
+  min-height: 100vh;
+  background-image: url(../assets/images/Mykola_Pymonenko-Vechoriye.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .main-wrap {
@@ -180,9 +162,9 @@ a.link {
     align-items: center;
     flex-wrap: wrap;
     @media screen and (min-width: $md) {
-    display: flex;
-    justify-content: space-between;
-    gap: 3px;
+      display: flex;
+      justify-content: space-between;
+      gap: 3px;
     }
   }
 
@@ -197,19 +179,21 @@ a.link {
     align-items: center;
     flex-wrap: wrap;
     @media screen and (min-width: $md) {
-    display: flex;
-    justify-content: space-between;
-    gap: 3px;
+      display: flex;
+      justify-content: space-between;
+      gap: 3px;
     }
   }
 }
 
-.gap-30px {gap: 30px;}
+.gap-30px {
+  gap: 30px;
+}
 
 .btn {
   &-sm {
     background-color: transparent;
-    border: none ;
+    border: none;
     color: white;
     border-radius: 8px;
     font-weight: 700;
@@ -220,7 +204,7 @@ a.link {
     }
     &-team {
       background-color: transparent;
-      border: none ;
+      border: none;
       color: $grey-3;
       border-radius: 8px;
       font-weight: 700;
@@ -230,8 +214,9 @@ a.link {
         background-color: $pink;
         color: white;
       }
+    }
   }
-}}
+}
 
 .navbar-toggler.hlegal-toggler {
   border: none;
@@ -253,49 +238,75 @@ a.link {
     background-color: $grey-1;
     border-radius: 50%;
     display: none;
-    @media screen and (min-width: $sm) {display: inline-block;}
+    @media screen and (min-width: $sm) {
+      display: inline-block;
+    }
     right: 10px;
   }
 }
 
-.navy-dark {color: $navy-dark;}
-.bold {font-weight: $bold;}
-.normal {font-weight: $normal;}
-.size-16px {font-size: $size-16px;}
-.size-14px {font-size: $size-14px;}
-.size-12px {font-size: $size-12px;}
-.blue {color: $blue;}
-.blue-2 {color: $blue-2;}
-.grey-3 {color: $grey-3;}
-.background-grey {background-color: #F5F5FA;}
-.background-white {background-color: #Fff;}
-
-.h2-section {font-weight: $bold;
-    font-family: Montserrat;
-    font-size: 38px;
-    font-style: normal;
-    line-height: normal;
-        background: var(
-          --gradient-text-red-reversed,
-          linear-gradient(90deg, #ef8080 0.84%, #f0145a 99.96%)
-        );
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+.navy-dark {
+  color: $navy-dark;
+}
+.bold {
+  font-weight: $bold;
+}
+.normal {
+  font-weight: $normal;
+}
+.size-16px {
+  font-size: $size-16px;
+}
+.size-14px {
+  font-size: $size-14px;
+}
+.size-12px {
+  font-size: $size-12px;
+}
+.blue {
+  color: $blue;
+}
+.blue-2 {
+  color: $blue-2;
+}
+.grey-3 {
+  color: $grey-3;
+}
+.background-grey {
+  background-color: #f5f5fa;
+}
+.background-white {
+  background-color: #fff;
 }
 
-.h2-section-2 {font-weight: $bold;
+.h2-section {
+  font-weight: $bold;
   font-family: Montserrat;
   font-size: 38px;
   font-style: normal;
   line-height: normal;
-      background: var(
-        --gradient-text-red-reversed,
-        linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%)
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+  background: var(
+    --gradient-text-red-reversed,
+    linear-gradient(90deg, #ef8080 0.84%, #f0145a 99.96%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h2-section-2 {
+  font-weight: $bold;
+  font-family: Montserrat;
+  font-size: 38px;
+  font-style: normal;
+  line-height: normal;
+  background: var(
+    --gradient-text-red-reversed,
+    linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .p-grey {
@@ -303,30 +314,36 @@ a.link {
   color: $grey-3;
 }
 
-.h4-section {font-weight: $bold;
-    font-family: Montserrat;
-    font-size: 22px;
-    font-style: normal;
-    line-height: normal;
-    color: $blue;
+.h4-section {
+  font-weight: $bold;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+  color: $blue;
 }
 
-.p-section {font-weight: $bold;
-    font-family: Montserrat;
-    font-size: 16px;
-    padding-bottom: 30px;
-    @media screen and (min-width: $sm) {
+.p-section {
+  font-weight: $bold;
+  font-family: Montserrat;
+  font-size: 16px;
+  padding-bottom: 30px;
+  @media screen and (min-width: $sm) {
     padding-bottom: 60px;
-      }
-    font-style: normal;
-    line-height: 162.5% ;
-    color: $blue;
-    font-weight: 400;
-    color: white;
-    &-team {color: $grey-3;}
+  }
+  font-style: normal;
+  line-height: 162.5%;
+  color: $blue;
+  font-weight: 400;
+  color: white;
+  &-team {
+    color: $grey-3;
+  }
 }
 
-.gap-15 {gap: 15px;}
+.gap-15 {
+  gap: 15px;
+}
 
 .nav-link-h {
   color: blue;
@@ -337,22 +354,22 @@ a.link {
   }
   &.active,
   &:hover {
+    color: $pink;
+    text-decoration: underline $pink;
+  }
+  &-team {
+    color: blue;
+    @media screen and (min-width: $sm) {
+      color: $blue;
+      font-weight: $bold;
+      font-size: 16px;
+    }
+    &.active,
+    &:hover {
       color: $pink;
-      text-decoration: underline $pink; 
+      text-decoration: underline $pink;
     }
-    &-team { color: blue;
-      @media screen and (min-width: $sm) {
-        color: $blue;
-        font-weight: $bold;
-        font-size: 16px;
-      }
-      &.active,
-      &:hover {
-          color: $pink;
-          text-decoration: underline $pink; 
-        }
-
-    }
+  }
 }
 
 .hover-pink:hover {
@@ -362,22 +379,21 @@ a.link {
 }
 
 .link-section {
-      color: $blue;
-      font-family: Montserrat;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      &.active,
-      &:hover {
-        color: $pink;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      }
+  color: $blue;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  &.active,
+  &:hover {
+    color: $pink;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
-
+}
 
 .offcanvas {
   border-radius: 8px 8px 0 0;
@@ -398,15 +414,15 @@ a.link {
     fill: $grey-1;
     &.active,
     &:hover {
-    fill: $pink;
-    cursor: pointer;
-  } 
+      fill: $pink;
+      cursor: pointer;
+    }
   }
   &.active,
   &:hover {
     border: 1px solid $pink;
     cursor: pointer;
-  } 
+  }
 }
 
 .carousel-img {
@@ -457,7 +473,8 @@ a.link {
 
 .partners {
   border-radius: 12px;
-  overflow: hidden;}
+  overflow: hidden;
+}
 
 .partners-img {
   width: 100%;
@@ -472,74 +489,74 @@ a.link {
   object-fit: cover;
 }
 
-.partner-icon{
+.partner-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   &__1 {
-    background-color: #1C4280;
+    background-color: #1c4280;
   }
   &__2 {
     background-color: #143646;
   }
   &__3 {
-    background-color: #F48B30;
+    background-color: #f48b30;
   }
   &__4 {
-    background-color: #9E4DC3;
+    background-color: #9e4dc3;
   }
   &__5 {
-    background-color: #FD9339;
+    background-color: #fd9339;
   }
   &__6 {
-    background-color: #E2E2E4;
+    background-color: #e2e2e4;
   }
   &__7 {
-    display: none; 
+    display: none;
     @media screen and (min-width: $md) {
       display: flex;
       justify-content: center;
-        }
-    background-color: #C71C36;
+    }
+    background-color: #c71c36;
   }
   &__8 {
-    display: none; 
+    display: none;
     @media screen and (min-width: $md) {
       display: flex;
       justify-content: center;
-        }
-    background-color: #DCF3F9;
+    }
+    background-color: #dcf3f9;
   }
   &__9 {
-    display: none; 
+    display: none;
     @media screen and (min-width: $md) {
       display: flex;
       justify-content: center;
-        }
-    background-color: #EAEAEA;
+    }
+    background-color: #eaeaea;
   }
   &__10 {
-    display: none; 
+    display: none;
     @media screen and (min-width: $md) {
       display: flex;
       justify-content: center;
-        }
+    }
     background-color: #282240;
   }
   &__11 {
-    display: none; 
+    display: none;
     @media screen and (min-width: $md) {
       display: flex;
       justify-content: center;
-        }
-    background-color: #1D4568;
+    }
+    background-color: #1d4568;
   }
   &__12 {
-    display: none; 
+    display: none;
     @media screen and (min-width: $md) {
       display: flex;
       justify-content: center;
-        }
+    }
     background-color: #000000;
   }
 }
@@ -549,7 +566,7 @@ a.link {
   flex-direction: column;
   @media screen and (min-width: $md) {
     flex-direction: row;
-      }
+  }
 }
 
 .padding-30 {
