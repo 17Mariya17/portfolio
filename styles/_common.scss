@@ -17,8 +17,29 @@ $size-16px: 16px;
 $size-14px: 14px;
 $size-12px: 12px;
 
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Montserrat:wght@400;500;700&family=Poppins:wght@200;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,500;10..100,800&family=League+Gothic&family=League+Script&family=Mrs+Saint+Delafield&family=Satisfy&display=swap");
+
+//fonts
+.league_gothic {
+  font-family: "League Gothic";
+}
+
+.satisfy {
+  font-family: "Satisfy";
+  font-weight: 400;
+}
+
+.mrs_saint_delafield {
+  font-family: "Mrs Saint Delafield";
+}
+
+.league_script {
+  font-family: "League Script";
+}
+
+.imbue {
+  font-family: "Imbue";
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -79,7 +100,7 @@ a.link {
     margin-bottom: 60px;
   }
   min-height: 100vh;
-  background-image: url(../assets/images/Mykola_Pymonenko-Vechoriye.jpg);
+  background-image: url(../assets/images/Kryvolap-A.D.-Pejzazh-z-misyatsem-Pejzazh-s-lunoj-min-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -99,14 +120,7 @@ a.link {
       height: 100%;
     }
   }
-  &__section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-    position: relative;
-    z-index: 100;
-  }
+
   &__title {
     padding: 0 50px;
     font-size: 38px;
@@ -118,6 +132,8 @@ a.link {
   padding: 5px;
   color: white;
   display: grid;
+  justify-content: space-between;
+  align-items: center;
   row-gap: 18px;
   &__info {
     grid-area: info;
@@ -130,6 +146,7 @@ a.link {
   }
   &__logo {
     grid-area: logo;
+    padding-top: 20px;
   }
   &__info {
     grid-area: info;
@@ -307,6 +324,19 @@ a.link {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.header-name {
+  color: #eda4c5;
+  font-family: "Satisfy";
+  font-weight: 400;
+  font-size: 24px;
+  &-2 {
+    color: #fff6fa;
+    font-family: "Imbue";
+    font-weight: 400;
+    font-size: 24px;
+  }
 }
 
 .p-grey {
