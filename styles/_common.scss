@@ -82,6 +82,10 @@ body {
   padding-top: 30px;
 }
 
+.p-top-70 {
+  padding-top: 70px;
+}
+
 .p-bottom-30 {
   padding-bottom: 30px;
 }
@@ -122,9 +126,11 @@ a.link {
   }
 
   &__title {
-    padding: 0 50px;
-    font-size: 38px;
-    text-align: center;
+    font-size: 150px;
+    text-align: start;
+    color: #fff6fa;
+    font-family: "Imbue";
+    font-weight: 400;
   }
 }
 
@@ -335,7 +341,14 @@ a.link {
     color: #fff6fa;
     font-family: "Imbue";
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
+  }
+  &-3 {
+    color: #fff6fa;
+    font-family: "Mrs Saint Delafield";
+    font-weight: 400;
+    font-size: 35px;
+    text-align: start;
   }
 }
 
@@ -375,17 +388,28 @@ a.link {
   gap: 15px;
 }
 
+.gap-50 {
+  gap: 50px;
+}
+
+.gap-70 {
+  gap: 100px;
+}
+
 .nav-link-h {
-  color: blue;
+  color: #fff6fa;
   @media screen and (min-width: $sm) {
-    color: white;
-    font-weight: $bold;
-    font-size: 16px;
+    color: #fff6fa;
+    font-family: "Imbue";
+    font-weight: 400;
+    font-size: 22px;
   }
   &.active,
   &:hover {
-    color: $pink;
-    text-decoration: underline $pink;
+    color: #e1ab07;
+    font-family: "Imbue";
+    font-weight: 400;
+    font-size: 22px;
   }
   &-team {
     color: blue;
@@ -596,7 +620,17 @@ a.link {
   flex-direction: column;
   @media screen and (min-width: $md) {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .padding-30 {
@@ -613,4 +647,34 @@ a.link {
 
 .border-footer {
   border-top: 2px solid $grey-4;
+}
+
+.border-header {
+  border-bottom: 1px solid $grey-4;
+}
+
+.photo {
+  border-radius: 50%;
+  height: 250px;
+  width: auto;
+
+  box-shadow: 0 30px 40px 10px #e1ab07;
+}
+
+.yellow {
+  text-shadow: #e1ab07 1px 0 10px;
+}
+
+.btn-header {
+  padding: 10px 50px;
+  background-color: transparent;
+  border-radius: 60px;
+  border: 1px solid #fff6fa;
+  cursor: pointer;
+  font-size: 35px;
+  color: #fff6fa;
+  font-family: "Imbue";
+  &:hover {
+    background-color: #fff6fa3d;
+  }
 }
