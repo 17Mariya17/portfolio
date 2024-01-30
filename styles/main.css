@@ -202,6 +202,10 @@ body {
   padding-top: 30px;
 }
 
+.p-top-50 {
+  padding-top: 50px;
+}
+
 .p-top-70 {
   padding-top: 70px;
 }
@@ -248,8 +252,9 @@ a.link {
   height: 100%;
 }
 .main-wrap__title {
-  font-size: 150px;
-  text-align: start;
+  font-size: 120px;
+  text-align: center;
+  padding-top: 50px;
   color: #fff6fa;
   font-family: "Imbue";
   font-weight: 400;
@@ -461,6 +466,14 @@ a.link {
   -webkit-text-fill-color: transparent;
 }
 
+.font-22px {
+  font-size: 22px;
+}
+
+.font-35px {
+  font-size: 30px;
+}
+
 .header-name {
   color: #eda4c5;
   font-family: "Satisfy";
@@ -471,14 +484,12 @@ a.link {
   color: #fff6fa;
   font-family: "Imbue";
   font-weight: 400;
-  font-size: 22px;
 }
 .header-name-3 {
   color: #fff6fa;
   font-family: "Mrs Saint Delafield";
-  font-weight: 400;
-  font-size: 35px;
-  text-align: start;
+  font-weight: 500;
+  font-size: 40px;
 }
 
 .p-grey {
@@ -803,11 +814,16 @@ a.link {
   border-radius: 50%;
   height: 250px;
   width: auto;
+  margin-top: 50px;
   box-shadow: 0 30px 40px 10px #e1ab07;
 }
 
 .yellow {
   text-shadow: #e1ab07 1px 0 10px;
+}
+
+.color_yellow {
+  color: #e1ab07;
 }
 
 .btn-header {
