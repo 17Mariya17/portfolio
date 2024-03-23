@@ -11,5 +11,10 @@
 
 .logo {
   max-width: 150px;
-  height: 32px;
+  height: auto;
+}
+
+.buttn {
+  background-image: url("../assets/images/blue\ semitransparent\ rock.png");
+  background-repeat: no-repeat;
 }
