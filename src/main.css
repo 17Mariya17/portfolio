@@ -9,11 +9,6 @@
   flex-direction: column;
 }
 
-.logo {
-  max-width: 150px;
-  height: auto;
-}
-
 .buttn {
   background-image: url("../assets/images/blue\ semitransparent\ rock.png");
   background-repeat: no-repeat;
