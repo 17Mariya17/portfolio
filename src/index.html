@@ -26,10 +26,15 @@
       href="../assets/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
-  <body class="page-wrap md:container p-3 sm:px-5 lg:px-10 pt-6">
+  <body class="page-wrap md:container pt-3 md:pt-6">
     <!-- Header -->
-    <header class="border-2 border-sky-500 rounded-3xl">
+    <header class="border-2 border-sky-500 rounded-3xl mx-3 sm:mx-5 lg:mx-10">
       <div class="mx-auto max-w-screen-xl px-4">
         <!-- Flex container for header elements -->
         <div class="flex h-16 items-center justify-between gap-x-2">
@@ -42,7 +47,7 @@
             />
           </div>
           <!-- Menu elements for md+ screen  -->
-          <div class="hidden md:block">
+          <div class="hidden md:block px-3 sm:px-5 lg:px-10">
             <nav aria-label="Global">
               <ul class="flex items-center gap-16 text-sm">
                 <li>
@@ -53,11 +58,18 @@
                     About me</a
                   >
                 </li>
-
                 <li>
                   <a
                     class="text-rose-500 text-lg font-bold transition hover:underline hover:decoration-2"
-                    href="#"
+                    href="#skills"
+                  >
+                    Skills</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-rose-500 text-lg font-bold transition hover:underline hover:decoration-2"
+                    href="#myWorks"
                   >
                     My works
                   </a>
@@ -66,7 +78,7 @@
                 <li>
                   <a
                     class="text-rose-500 text-lg font-bold transition hover:underline hover:decoration-2"
-                    href="#"
+                    href="#experience"
                   >
                     Experience
                   </a>
@@ -75,7 +87,7 @@
                 <li>
                   <a
                     class="text-rose-500 text-lg font-bold transition hover:underline hover:decoration-2"
-                    href="#"
+                    href="#contacts"
                   >
                     Contacts
                   </a>
@@ -122,17 +134,23 @@
                     About me
                   </a>
                   <a
-                    href="#"
+                    href="#skills"
+                    class="closeMobileMenu block text-rose-500 text-lg font-bold transition hover:underline hover:decoration-2 active:decoration-2 focus:decoration-2"
+                  >
+                    Skills
+                  </a>
+                  <a
+                    href="#myWorks"
                     class="closeMobileMenu block text-rose-500 text-lg font-bold transition hover:underline hover:decoration-2 active:decoration-2 focus:decoration-2"
                     >My works</a
                   >
                   <a
-                    href="#"
+                    href="#experience"
                     class="closeMobileMenu block text-rose-500 text-lg font-bold transition hover:underline hover:decoration-2 active:decoration-2 focus:decoration-2"
                     >Experience</a
                   >
                   <a
-                    href="#"
+                    href="#contacts"
                     class="closeMobileMenu block text-rose-500 text-lg font-bold transition hover:underline hover:decoration-2 active:decoration-2 focus:decoration-2"
                     >Contacts</a
                   >
@@ -143,355 +161,472 @@
         </div>
       </div>
     </header>
-    <div>
-      <div id="aboutMe" class="flex flex-wrap flex-row justify-around pt-8">
-        <div class="max-w-2xl">
-          <img src="../assets/images/rainbow.png" alt="" />
-        </div>
-        <div class="flex flex-wrap flex-col lg:items-start items-center">
-          <div class="flex flex-wrap flex-row gap-12">
-            <div class="max-w-80">
-              <img src="../assets/images/hello.png" alt="" />
-            </div>
-            <div class="hidden lg:block">
-              <img src="../assets/images/star.png" alt="" />
-            </div>
-          </div>
-          <p
-            class="text-wrap text-sky-500 pb-8 md:text-lg font-bold md:ps-3 md:text-start text-center"
-          >
-            My name is <span class="text-rose-500">Mariia.</span> I am a junior
-            Front-End developer with <br />
-            work experience in multinational corporations. <br />
-            <br />
-            I consider myself a creative, detail-oriented, hardworking <br />
-            person who’s willing to learn at every step of the way!
-          </p>
-          <div class="md:ps-3">
-            <button
-              class="bg-sky-500 rounded-3xl max-w-60 py-2 px-8 text-lg text-sky-700 font-bold buttn"
-            >
-              Contact me
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-wrap flex-row justify-around pt-8 md:pt-5">
-        <div class="flex flex-wrap flex-col md:text-start text-center">
-          <div class="md:ps-32">
-            <p class="text-rose-500 md:text-4xl text-2xl font-bold">
-              Hard Skills
-            </p>
-            <img src="../assets/images/roww.png" alt="" />
-          </div>
-          <div
-            class="flex flex-wrap flex-row gap-16 md:pt-6 pt-3 md:justify-start justify-center"
-          >
-            <div class="flex flex-wrap flex-row gap-5">
-              <img src="../assets/images/html.png" alt="" />
-              <p
-                class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-              >
-                HTML
-              </p>
-            </div>
-            <div class="flex-wrap flex-row hidden md:flex">
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-            </div>
-          </div>
-          <div
-            class="flex flex-wrap flex-row gap-9 pt-1 md:pt-3 md:justify-start justify-center"
-          >
-            <div class="flex flex-wrap flex-row gap-5">
-              <img src="../assets/images/css.png" alt="" />
-              <p
-                class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-              >
-                CSS/SCSS
-              </p>
-            </div>
-            <div class="flex-wrap flex-row hidden md:flex">
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-            </div>
-          </div>
-          <div
-            class="flex flex-wrap flex-row gap-6 pt-1 md:pt-3 md:justify-start justify-center"
-          >
-            <div class="flex flex-wrap flex-row gap-5">
-              <img src="../assets/images/js.png" alt="" />
-              <p
-                class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-              >
-                Java Script
-              </p>
-            </div>
-            <div class="flex-wrap flex-row hidden md:flex">
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-            </div>
-          </div>
-          <div
-            class="flex flex-wrap flex-row gap-18 pt-1 md:pt-3 md:justify-start justify-center"
-          >
-            <div class="flex flex-wrap flex-row gap-5">
-              <img src="../assets/images/figma.png" alt="" />
-              <p
-                class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-              >
-                Figma
-              </p>
-            </div>
-            <div class="flex-wrap flex-row hidden md:flex">
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-            </div>
-          </div>
-          <div
-            class="flex flex-wrap flex-row gap-16 pt-1 md:pt-3 md:justify-start justify-center"
-          >
-            <div class="flex flex-wrap flex-row gap-5">
-              <img src="../assets/images/canva.png" alt="" />
-              <p
-                class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-              >
-                Canva
-              </p>
-            </div>
-            <div class="flex-wrap flex-row hidden md:flex">
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-            </div>
-          </div>
-          <div
-            class="flex flex-wrap flex-row gap-8 pt-1 md:pt-3 md:justify-start justify-center"
-          >
-            <div class="flex flex-wrap flex-row gap-5">
-              <img src="../assets/images/bootst.png" alt="" />
-              <p
-                class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-              >
-                Bootstrap
-              </p>
-            </div>
-            <div class="flex-wrap flex-row hidden md:flex">
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-            </div>
-          </div>
-          <div
-            class="flex flex-wrap flex-row gap-11 pt-1 md:pt-3 md:justify-start justify-center"
-          >
-            <div class="flex flex-wrap flex-row gap-5">
-              <img src="../assets/images/tail.png" alt="" />
-              <p
-                class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-              >
-                Tailwind
-              </p>
-            </div>
-            <div class="flex-wrap flex-row hidden md:flex">
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-            </div>
-          </div>
-          <div
-            class="flex flex-wrap flex-row gap-10 pt-1 md:pt-3 md:justify-start justify-center pb-4"
-          >
-            <div class="flex flex-wrap flex-row gap-5">
-              <img src="../assets/images/adapt.png" alt="" />
-              <p
-                class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-              >
-                Adaptive
-              </p>
-            </div>
-            <div class="flex-wrap flex-row hidden md:flex">
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-              <img src="../assets/images/full_star.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-wrap flex-col md:text-start text-center">
-          <div class="md:ps-5">
-            <p class="text-rose-500 md:text-4xl text-2xl font-bold">
-              Soft Skills
-            </p>
-            <img src="../assets/images/roww.png" alt="" />
-          </div>
-          <div class="md:pt-6 pt-3">
-            <p
-              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-            >
-              Teamwork
-            </p>
-            <p
-              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-            >
-              Communication
-            </p>
-            <p
-              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-            >
-              Time management
-            </p>
-            <p
-              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-            >
-              Basics of Scrum
-            </p>
-            <p
-              class="text-sky-500 md:text-lg font-bold md:text-start text-center pb-4"
-            >
-              Jira
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-wrap flex-col md:text-start text-center">
-          <div class="flex flex-wrap flex-row gap-5">
-            <div class="md:ps-5 flex flex-wrap flex-col">
-              <p class="text-rose-500 md:text-4xl text-2xl font-bold">
-                Languages
-              </p>
-              <img src="../assets/images/roww.png" alt="" />
-            </div>
-            <div class="hidden lg:block">
-              <img src="../assets/images/flo.png" alt="" />
-            </div>
-          </div>
-          <div class="lg:pt-1 pt-3">
-            <p
-              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-            >
-              English (B2)
-            </p>
-            <p
-              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-            >
-              Polish (B2)
-            </p>
-            <p
-              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-            >
-              Ukrainian (C2)
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="max-w-80 mx-auto pt-7">
-        <img src="../assets/images/exp.png" alt="" />
-        <img class="sm:mx-0 mx-auto" src="../assets/images/roww.png" alt="" />
+    <!-- About me section -->
+    <div
+      id="aboutMe"
+      class="flex flex-wrap flex-row justify-around pt-8 mx-3 sm:mx-5 lg:mx-10"
+    >
+      <div class="max-w-2xl">
+        <img src="../assets/images/rainbow.png" alt="" />
       </div>
-      <!--Experience & Education section -->
-      <div
-        class="flex flex-wrap flex-row justify-center md:justify-around pt-5 gap-2 md:gap-5"
-      >
-        <!--Experience column -->
-        <div class="flex flex-wrap flex-col md:text-start text-center">
-          <p class="text-rose-500 md:text-4xl text-2xl font-bold">
-            L'oreal Ukraine
-          </p>
-
-          <p
-            class="text-sky-500 md:text-lg font-bold md:text-start text-center md:pt-3 pt-1"
-          >
-            E-Commerce Analyst
-          </p>
-          <p
-            class="text-green-600 md:text-sm font-bold md:text-start text-center"
-          >
-            (February 2022 - August 2023)
-          </p>
-          <p class="text-rose-500 md:text-4xl text-2xl font-bold md:pt-7 pt-6">
-            Philip Morris International
-          </p>
-          <p
-            class="text-sky-500 md:text-lg font-bold md:text-start text-center md:pt-3 pt-1"
-          >
-            Analyst in BI Department
-          </p>
-          <p
-            class="text-green-600 md:text-sm font-bold md:text-start text-center"
-          >
-            (March 2021 - February 2022)
-          </p>
-          <p class="text-rose-500 md:text-4xl text-2xl font-bold md:pt-7 pt-6">
-            Philip Morris International
-          </p>
-          <p
-            class="text-sky-500 md:text-lg font-bold md:text-start text-center md:pt-3 pt-1"
-          >
-            Intern
-          </p>
-          <p
-            class="text-green-600 md:text-sm font-bold md:text-start text-center"
-          >
-            (July 2020 - March 2021)
-          </p>
-        </div>
-        <!--Education column -->
-        <div class="flex flex-wrap flex-col md:text-start text-center">
-          <p class="text-rose-500 md:text-4xl text-2xl font-bold md:pt-0 pt-6">
-            Education
-          </p>
-          <p
-            class="text-sky-500 md:text-lg font-bold md:text-start text-center md:pt-3 pt-1"
-          >
-            Taras Shevchenko
-          </p>
-          <p
-            class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-          >
-            Nation University of Kyiv (MSc)
-          </p>
-          <p
-            class="text-sky-500 md:text-lg font-bold md:text-start text-center"
-          >
-            Management and Business Administration
-          </p>
-          <p
-            class="text-green-600 md:text-sm font-bold md:text-start text-center"
-          >
-            (September 2020 - June 2022)
-          </p>
-          <img
-            class="hidden md:block h-auto max-w-32 pt-16 pl-8"
-            src="../assets/images/flower_yellow.png"
-            alt=""
-          />
-        </div>
-        <!--Cat and flower - visible on lg -->
-        <div class="hidden lg:flex lg:flex-col lg:justify-between">
-          <div class="">
-            <img src="../assets/images/flo.png" alt="" />
+      <div class="flex flex-wrap flex-col lg:items-start items-center">
+        <div class="flex flex-wrap flex-row gap-12">
+          <div class="max-w-80">
+            <img src="../assets/images/hello.png" alt="" />
           </div>
-          <div class="h-auto max-w-60">
-            <img src="../assets/images/cat_2.png" alt="" />
+          <div class="hidden lg:block">
+            <img src="../assets/images/star.png" alt="" />
           </div>
         </div>
-      </div>
-      <!--Visible cat on up to lg-screen -->
-      <div class="mx-auto lg:hidden h-auto max-w-56 mt-6">
-        <img src="../assets/images/cat_2.png" alt="" />
+        <p
+          class="text-wrap text-sky-500 pb-8 md:text-lg font-bold md:ps-3 md:text-start text-center"
+        >
+          My name is <span class="text-rose-500">Mariia.</span> I am a junior
+          Front-End developer with <br />
+          work experience in multinational corporations. <br />
+          <br />
+          I consider myself a creative, detail-oriented, hardworking <br />
+          person who’s willing to learn at every step of the way!
+        </p>
+        <div class="md:ps-3">
+          <button
+            class="bg-sky-500 rounded-3xl max-w-60 py-2 px-8 text-lg text-sky-700 font-bold buttn"
+          >
+            Contact me
+          </button>
+        </div>
       </div>
     </div>
+
+    <!-- Skills section-->
+    <div
+      id="skills"
+      class="flex flex-wrap flex-row justify-around pt-8 pb-5 lg:pb-16 md:pt-5 px-3 sm:px-5 lg:px-10 relative"
+    >
+      <!--Hard Skills column -->
+      <div class="flex flex-wrap flex-col md:text-start text-center">
+        <div class="md:ps-32">
+          <p class="text-rose-500 md:text-4xl text-2xl font-bold">
+            Hard Skills
+          </p>
+          <img src="../assets/images/roww.png" alt="" />
+        </div>
+        <!-- HTML -->
+        <div
+          class="flex flex-wrap flex-row gap-16 md:pt-6 pt-3 md:justify-start justify-center"
+        >
+          <!--Icon & name -->
+          <div class="flex flex-wrap flex-row gap-5">
+            <img src="../assets/images/html.png" alt="" />
+            <p
+              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+            >
+              HTML
+            </p>
+          </div>
+          <!--Stars -->
+          <div class="flex-wrap flex-row hidden md:flex">
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+          </div>
+        </div>
+        <!-- CSS -->
+        <div
+          class="flex flex-wrap flex-row gap-9 pt-1 md:pt-3 md:justify-start justify-center"
+        >
+          <!--Icon & name -->
+          <div class="flex flex-wrap flex-row gap-5">
+            <img src="../assets/images/css.png" alt="" />
+            <p
+              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+            >
+              CSS/SCSS
+            </p>
+          </div>
+          <!--Stars -->
+          <div class="flex-wrap flex-row hidden md:flex">
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+          </div>
+        </div>
+        <!--Javascript -->
+        <div
+          class="flex flex-wrap flex-row gap-6 pt-1 md:pt-3 md:justify-start justify-center"
+        >
+          <!--Icon & name -->
+          <div class="flex flex-wrap flex-row gap-5">
+            <img src="../assets/images/js.png" alt="" />
+            <p
+              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+            >
+              JavaScript
+            </p>
+          </div>
+          <!--Stars -->
+          <div class="flex-wrap flex-row hidden md:flex">
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+          </div>
+        </div>
+        <!--Figma -->
+        <div
+          class="flex flex-wrap flex-row gap-18 pt-1 md:pt-3 md:justify-start justify-center"
+        >
+          <!--Icon & name -->
+          <div class="flex flex-wrap flex-row gap-5">
+            <img src="../assets/images/figma.png" alt="" />
+            <p
+              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+            >
+              Figma
+            </p>
+          </div>
+          <!--Stars -->
+          <div class="flex-wrap flex-row hidden md:flex">
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+          </div>
+        </div>
+        <!-- Canva -->
+        <div
+          class="flex flex-wrap flex-row gap-16 pt-1 md:pt-3 md:justify-start justify-center"
+        >
+          <!--Icon & name -->
+          <div class="flex flex-wrap flex-row gap-5">
+            <img src="../assets/images/canva.png" alt="" />
+            <p
+              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+            >
+              Canva
+            </p>
+          </div>
+          <!--Stars -->
+          <div class="flex-wrap flex-row hidden md:flex">
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+          </div>
+        </div>
+        <!--Bootstrap -->
+        <div
+          class="flex flex-wrap flex-row gap-8 pt-1 md:pt-3 md:justify-start justify-center"
+        >
+          <!--Icon & name -->
+          <div class="flex flex-wrap flex-row gap-5">
+            <img src="../assets/images/bootst.png" alt="" />
+            <p
+              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+            >
+              Bootstrap
+            </p>
+          </div>
+          <!--Stars -->
+          <div class="flex-wrap flex-row hidden md:flex">
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+          </div>
+        </div>
+        <!--Tailwind -->
+        <div
+          class="flex flex-wrap flex-row gap-11 pt-1 md:pt-3 md:justify-start justify-center"
+        >
+          <!--Icon & name -->
+          <div class="flex flex-wrap flex-row gap-5">
+            <img src="../assets/images/tail.png" alt="" />
+            <p
+              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+            >
+              Tailwind
+            </p>
+          </div>
+          <!--Stars -->
+          <div class="flex-wrap flex-row hidden md:flex">
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+          </div>
+        </div>
+        <!--Adaptive -->
+        <div
+          class="flex flex-wrap flex-row gap-10 pt-1 md:pt-3 md:justify-start justify-center pb-4"
+        >
+          <!--Icon & name -->
+          <div class="flex flex-wrap flex-row gap-5">
+            <img src="../assets/images/adapt.png" alt="" />
+            <p
+              class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+            >
+              Adaptive
+            </p>
+          </div>
+          <!--Stars -->
+          <div class="flex-wrap flex-row hidden md:flex">
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+            <img src="../assets/images/full_star.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!--Soft Skills column -->
+      <div class="flex flex-wrap flex-col md:text-start text-center">
+        <!--Title -->
+        <div class="md:ps-5">
+          <p class="text-rose-500 md:text-4xl text-2xl font-bold">
+            Soft Skills
+          </p>
+          <img src="../assets/images/roww.png" alt="" />
+        </div>
+        <!-- Skills list -->
+        <div class="md:pt-6 pt-3">
+          <p
+            class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+          >
+            Teamwork
+          </p>
+          <p
+            class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+          >
+            Communication
+          </p>
+          <p
+            class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+          >
+            Time management
+          </p>
+          <p
+            class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+          >
+            Basics of Scrum
+          </p>
+          <p
+            class="text-sky-500 md:text-lg font-bold md:text-start text-center pb-4"
+          >
+            Jira
+          </p>
+        </div>
+      </div>
+      <!--Languages column -->
+      <div class="flex flex-wrap flex-col md:text-start text-center">
+        <div class="flex flex-wrap flex-row gap-5">
+          <!--Title -->
+          <div class="md:ps-5 flex flex-wrap flex-col">
+            <p class="text-rose-500 md:text-4xl text-2xl font-bold">
+              Languages
+            </p>
+            <img src="../assets/images/roww.png" alt="" />
+          </div>
+          <!--Flower image -->
+          <div class="hidden lg:block">
+            <img src="../assets/images/flo.png" alt="" />
+          </div>
+        </div>
+        <!--Text -->
+        <div class="lg:pt-1 pt-3">
+          <p
+            class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+          >
+            English (B2)
+          </p>
+          <p
+            class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+          >
+            Polish (B2)
+          </p>
+          <p
+            class="text-sky-500 md:text-lg font-bold md:text-start text-center"
+          >
+            Ukrainian (C2)
+          </p>
+        </div>
+      </div>
+      <!--Lg image elements - position absolute -->
+      <!--Cat on the bottom of section -->
+      <div
+        class="hidden lg:block h-auto max-w-56 mt-6 z-40 absolute -bottom-6 right-72 xl:right-96"
+      >
+        <img src="../assets/images/skills-section-cat.png" alt="" />
+      </div>
+      <!--Paws -->
+      <!-- 1 -->
+      <div
+        class="hidden lg:block h-auto max-w-12 mt-6 z-30 absolute bottom-5 left-6 xl:left-16 rotate-90"
+      >
+        <img src="../assets/images/cat-paw.png" alt="" />
+      </div>
+      <!-- 2 -->
+      <div
+        class="hidden lg:block h-auto max-w-12 mt-6 z-30 absolute bottom-2 left-40 xl:left-56 rotate-45"
+      >
+        <img src="../assets/images/cat-paw.png" alt="" />
+      </div>
+      <!-- 3 -->
+      <div
+        class="hidden lg:block h-auto max-w-12 mt-6 z-30 absolute bottom-1 left-72 xl:left-96 rotate-90"
+      >
+        <img src="../assets/images/cat-paw.png" alt="" />
+      </div>
+      <!-- 4 -->
+      <div
+        class="hidden lg:block h-auto max-w-12 mt-6 z-30 absolute bottom-4 right-20"
+      >
+        <img src="../assets/images/cat-paw.png" alt="" />
+      </div>
+      <!-- 5 -->
+      <div
+        class="hidden lg:block h-auto max-w-12 mt-6 z-30 absolute bottom-14 right-5 rotate-12"
+      >
+        <img src="../assets/images/cat-paw.png" alt="" />
+      </div>
+    </div>
+    <!--My works section -->
+    <div
+      id="myWorks"
+      class="brown-background-image px-3 sm:px-5 lg:px-10 pt-5 pb-7"
+    >
+      <!--Title -->
+      <div class="flex flex-nowrap justify-center lg:justify-around">
+        <div class="max-w-80 px-3">
+          <img src="../assets/images/my-works-title.png" alt="" />
+        </div>
+        <!--lg: My name is -->
+        <div class="max-w-52 px-3 hidden lg:block">
+          <img src="../assets/images/my-name.png" alt="" />
+        </div>
+      </div>
+      <!--Swiper -->
+      <!-- Slider main container -->
+      <div class="swiper h-auto">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Calaculator slide -->
+          <div class="swiper-slide !flex !justify-center">
+            <h1 class="text-white text-3xl">Calculator</h1>
+          </div>
+          <!-- Test slide -->
+          <div class="swiper-slide !flex !justify-center">
+            <h1 class="text-white text-3xl">Calculator</h1>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <!--  <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev !text-white !hidden md:!block"></div>
+        <div class="swiper-button-next !text-white !hidden md:!block"></div>
+      </div>
+    </div>
+
+    <!--Experience & Education section -->
+    <!--Title -->
+    <div id="experience" class="max-w-80 px-3 mx-auto pt-7">
+      <img src="../assets/images/exp.png" alt="" />
+      <img class="sm:mx-0 mx-auto" src="../assets/images/roww.png" alt="" />
+    </div>
+    <!--Columns -->
+    <div
+      class="flex flex-wrap flex-row justify-center md:justify-around pt-5 gap-2 md:gap-5 px-3 sm:px-5 lg:px-10"
+    >
+      <!--Experience column -->
+      <div class="flex flex-wrap flex-col md:text-start text-center">
+        <p class="text-rose-500 md:text-4xl text-2xl font-bold">
+          L'oreal Ukraine
+        </p>
+
+        <p
+          class="text-sky-500 md:text-lg font-bold md:text-start text-center md:pt-3 pt-1"
+        >
+          E-Commerce Analyst
+        </p>
+        <p
+          class="text-green-600 md:text-sm font-bold md:text-start text-center"
+        >
+          (February 2022 - August 2023)
+        </p>
+        <p class="text-rose-500 md:text-4xl text-2xl font-bold md:pt-7 pt-6">
+          Philip Morris International
+        </p>
+        <p
+          class="text-sky-500 md:text-lg font-bold md:text-start text-center md:pt-3 pt-1"
+        >
+          Analyst in BI Department
+        </p>
+        <p
+          class="text-green-600 md:text-sm font-bold md:text-start text-center"
+        >
+          (March 2021 - February 2022)
+        </p>
+        <p class="text-rose-500 md:text-4xl text-2xl font-bold md:pt-7 pt-6">
+          Philip Morris International
+        </p>
+        <p
+          class="text-sky-500 md:text-lg font-bold md:text-start text-center md:pt-3 pt-1"
+        >
+          Intern
+        </p>
+        <p
+          class="text-green-600 md:text-sm font-bold md:text-start text-center"
+        >
+          (July 2020 - March 2021)
+        </p>
+      </div>
+      <!--Education column -->
+      <div class="flex flex-wrap flex-col md:text-start text-center">
+        <p class="text-rose-500 md:text-4xl text-2xl font-bold md:pt-0 pt-6">
+          Education
+        </p>
+        <p
+          class="text-sky-500 md:text-lg font-bold md:text-start text-center md:pt-3 pt-1"
+        >
+          Taras Shevchenko
+        </p>
+        <p class="text-sky-500 md:text-lg font-bold md:text-start text-center">
+          Nation University of Kyiv (MSc)
+        </p>
+        <p class="text-sky-500 md:text-lg font-bold md:text-start text-center">
+          Management and Business Administration
+        </p>
+        <p
+          class="text-green-600 md:text-sm font-bold md:text-start text-center"
+        >
+          (September 2020 - June 2022)
+        </p>
+        <img
+          class="hidden md:block h-auto max-w-32 pt-16 pl-8"
+          src="../assets/images/flower_yellow.png"
+          alt=""
+        />
+      </div>
+      <!--Cat and flower - visible on lg -->
+      <div class="hidden lg:flex lg:flex-col lg:justify-between">
+        <div class="">
+          <img src="../assets/images/flo.png" alt="" />
+        </div>
+        <div class="h-auto max-w-60">
+          <img src="../assets/images/cat_2.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!--Visible cat on up to lg-screen -->
+    <div class="mx-auto lg:hidden h-auto max-w-56 mt-6">
+      <img src="../assets/images/cat_2.png" alt="" />
+    </div>
+
     <!-- Import JS file -->
     <script type="module" src="./script.js"></script>
+    <!-- Swiper JS file -->
+    <script type="module" src="./swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
