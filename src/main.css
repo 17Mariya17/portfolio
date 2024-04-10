@@ -16,9 +16,22 @@
   background-position: center;
 }
 
+.carboard-background-image {
+  background-image: url("../assets/images/cardboar.png");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .buttn {
   background-image: url("../assets/images/blue\ semitransparent\ rock.png");
   background-repeat: no-repeat;
+}
+
+.ul-2 {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
 }
 
 .gap-18 {
