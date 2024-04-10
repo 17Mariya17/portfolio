@@ -530,40 +530,26 @@
               <div class="absolute z-30 top-14 sm:top-18 inset-x-0 px-10">
                 <!-- Description -->
                 <h1 class="text-center italic font-medium underline md:text-lg">
-                  Calculator
+                  Cyberpunk Calculator
                 </h1>
-                <p class="text-sm text-wrap text-justify">Some text</p>
-                <!-- Link -->
-                <h1
-                  class="text-center italic font-medium underline pt-5 md:text-lg"
-                >
-                  Links
-                </h1>
-                <ul
-                  class="text-sm text-wrap text-justify list-disc flex flex-wrap justify-around"
-                >
-                  <li><a href="">Website</a></li>
-                  <li><a href="">Code</a></li>
-                </ul>
+                <p class="text-sm text-wrap text-justify pt-1">
+                  A Cyberpunk-style calculator created to practice usage of
+                  Event Listeners in JavaScript
+                </p>
               </div>
             </div>
             <!-- Green: Website screenshot -->
             <div class="max-w-96 relative order-1 lg:order-2">
               <!-- Background image -->
-              <div class="">
-                <img src="../assets/images/green-background.png" alt="" />
-              </div>
-              <!-- Text -->
-              <div class="absolute z-30 top-14 sm:top-18 inset-x-0 px-10">
-                <!-- Description -->
-                <h1 class="text-center italic font-medium underline md:text-lg">
-                  Used tools
-                </h1>
-                <p class="text-sm text-wrap text-justify">Some text</p>
-              </div>
+              <a href="#" class="">
+                <img
+                  src="../assets/images/green-background-calculator.png"
+                  alt=""
+                />
+              </a>
             </div>
             <!-- Yellow: Used tools -->
-            <div class="max-w-80 relative order-3">
+            <div class="max-w-80 relative order-3 pb-5 md:pb-0">
               <!-- Background image -->
               <div class="">
                 <img src="../assets/images/yellow-background.png" alt="" />
@@ -574,22 +560,65 @@
                 <h1 class="text-center italic font-medium underline md:text-lg">
                   Used tools
                 </h1>
-                <p class="text-sm text-wrap text-justify">Some text</p>
+                <!-- Tools list -->
+                <ul class="list-disc text-wrap pt-1">
+                  <!-- Tools list -->
+                  <!-- JavaScript -->
+                  <li class="flex flex-wrap flex-row gap-2">
+                    <img
+                      class="w-4 h-4 my-auto"
+                      src="../assets/images/js.png"
+                      alt=""
+                    />
+                    <p class=" ">JavaScript</p>
+                  </li>
+                  <!-- SCSS -->
+                  <li class="flex flex-wrap flex-row gap-2">
+                    <img
+                      class="w-4 h-4 my-auto"
+                      src="../assets/images/css.png"
+                      alt=""
+                    />
+                    <p class=" ">SCSS</p>
+                  </li>
+                  <!-- HTML -->
+                  <li class="flex flex-wrap flex-row gap-2">
+                    <img
+                      class="w-4 h-4 my-auto"
+                      src="../assets/images/html.png"
+                      alt=""
+                    />
+                    <p class=" ">HTML</p>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
 
           <!-- Test slide -->
           <div class="swiper-slide !flex !justify-center">
-            <h1 class="text-white text-3xl">Calculator</h1>
+            <div>
+              <img src="../assets/images/aint-much-meme.png" alt="" />
+            </div>
           </div>
         </div>
         <!-- If we need pagination -->
-        <!--  <div class="swiper-pagination"></div> -->
+        <!-- <div class="swiper-pagination md:!hidden !block"></div> -->
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev !text-white !hidden md:!block"></div>
-        <div class="swiper-button-next !text-white !hidden md:!block"></div>
+        <div class="swiper-button-prev !text-white"></div>
+        <div class="swiper-button-next !text-white"></div>
+      </div>
+      <!-- lg: Images below the swiper -->
+      <div class="lg:flex-nowrap lg:justify-between hidden lg:flex px-12">
+        <!--Smiling star -->
+        <div class="max-w-32">
+          <img src="../assets/images/smiling-star.png" alt="" />
+        </div>
+        <!--Cross -->
+        <div class="max-w-32">
+          <img src="../assets/images/cross.png" alt="" />
+        </div>
       </div>
     </div>
 
