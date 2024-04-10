@@ -165,7 +165,7 @@
     <!-- About me section -->
     <div
       id="aboutMe"
-      class="relative flex flex-wrap md:flex-nowrap flex-row justify-around pt-3 mx-3 sm:mx-5 lg:mx-10"
+      class="relative flex flex-wrap md:flex-nowrap flex-row justify-around pt-7 mx-3 sm:mx-5 lg:mx-10"
     >
       <!-- Profile image -->
       <!-- xs -->
@@ -452,7 +452,7 @@
           </div>
         </div>
         <!--Text -->
-        <div class="lg:pt-1 pt-3">
+        <div class="lg:pt-1 pt-3 mb-48 md:mb-0">
           <p
             class="text-sky-500 md:text-lg font-bold md:text-start text-center"
           >
@@ -473,7 +473,7 @@
       <!--Lg image elements - position absolute -->
       <!--Cat on the bottom of section -->
       <div
-        class="hidden lg:block h-auto max-w-56 mt-6 z-40 absolute -bottom-6 right-72 xl:right-96"
+        class="block sm:hidden lg:block h-auto max-w-56 mt-6 z-40 absolute -bottom-6 right-8 lg:right-72 xl:right-96"
       >
         <img src="../assets/images/skills-section-cat.png" alt="" />
       </div>
@@ -529,97 +529,8 @@
       <div class="swiper h-auto">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-          <!-- Swiper slide: Calculator  -->
-          <div class="swiper-slide !flex !justify-around !flex-wrap !gap-5">
-            <!-- Pink: Project description -->
-            <div class="max-w-72 relative order-2 lg:order-1">
-              <!-- Background image -->
-              <div class="">
-                <img src="../assets/images/pink-background.png" alt="" />
-              </div>
-              <!-- Text -->
-              <div class="absolute z-30 top-14 sm:top-18 inset-x-0 px-10">
-                <!-- Description -->
-                <h1 class="text-rose-500 text-3xl font-bold text-center pt-2">
-                  Cyberpunk Calculator
-                </h1>
-                <p class="text-sm text-wrap text-justify pt-5 italic">
-                  A Cyberpunk-style calculator created to practice usage of
-                  Event Listeners in JavaScript
-                </p>
-              </div>
-            </div>
-            <!-- Green: Website screenshot -->
-            <div class="max-w-96 relative order-1 lg:order-2">
-              <!-- Background image -->
-              <a
-                href="https://17mariya17.github.io/calculator/"
-                target="_blank"
-                class=""
-              >
-                <img
-                  src="../assets/images/green-background-calculator.png"
-                  alt=""
-                />
-              </a>
-            </div>
-            <!-- Yellow: Used tools -->
-            <div class="max-w-80 relative order-3 pb-5 md:pb-0">
-              <!-- Background image -->
-              <div class="">
-                <img src="../assets/images/yellow-background.png" alt="" />
-              </div>
-              <!-- Text -->
-              <div class="absolute z-30 top-14 sm:top-18 inset-x-0 px-10">
-                <!-- Description -->
-                <h1 class="text-amber-600 text-3xl font-bold text-center pt-2">
-                  Used tools
-                </h1>
-                <!-- Tools list -->
-                <ul class="list-disc text-wrap pt-5 ul-2">
-                  <!-- Tools list -->
-                  <!-- JavaScript -->
-                  <li class="flex flex-wrap flex-row gap-2">
-                    <img
-                      class="w-4 h-4 my-auto"
-                      src="../assets/images/js.png"
-                      alt=""
-                    />
-                    <p class="italic">JavaScript</p>
-                  </li>
-                  <!-- SCSS -->
-                  <li class="flex flex-wrap flex-row gap-2">
-                    <img
-                      class="w-4 h-4 my-auto"
-                      src="../assets/images/css.png"
-                      alt=""
-                    />
-                    <p class="italic">SCSS</p>
-                  </li>
-                  <!-- HTML -->
-                  <li class="flex flex-wrap flex-row gap-2">
-                    <img
-                      class="w-4 h-4 my-auto"
-                      src="../assets/images/html.png"
-                      alt=""
-                    />
-                    <p class="italic">HTML</p>
-                  </li>
-                  <!-- Figma -->
-                  <li class="flex flex-wrap flex-row gap-2">
-                    <img
-                      class="w-4 h-4 my-auto"
-                      src="../assets/images/figma.png"
-                      alt=""
-                    />
-                    <p class="italic">Figma</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
           <!-- Swiper slide: Hlegal  -->
-          <div class="swiper-slide !flex !justify-around !flex-wrap !gap-5">
+          <div class="swiper-slide !flex !justify-around !flex-wrap !gap-1">
             <!-- Pink: Project description -->
             <div class="max-w-72 relative order-2 lg:order-1">
               <!-- Background image -->
@@ -716,15 +627,174 @@
               </div>
             </div>
           </div>
-          <!-- Test slide -->
+
+          <!-- Swiper slide: Calculator  -->
+          <div class="swiper-slide !flex !justify-around !flex-wrap !gap-1">
+            <!-- Pink: Project description -->
+            <div class="max-w-72 relative order-2 lg:order-1">
+              <!-- Background image -->
+              <div class="">
+                <img src="../assets/images/pink-background.png" alt="" />
+              </div>
+              <!-- Text -->
+              <div class="absolute z-30 top-14 sm:top-18 inset-x-0 px-10">
+                <!-- Description -->
+                <h1
+                  class="text-rose-500 sm:text-3xl text-2xl font-bold text-center sm:pt-2 pt-0"
+                >
+                  Cyberpunk Calculator
+                </h1>
+                <p class="text-sm text-wrap text-justify sm:pt-5 pt-3 italic">
+                  A Cyberpunk-style calculator created to practice usage of
+                  Event Listeners in JavaScript
+                </p>
+              </div>
+            </div>
+            <!-- Green: Website screenshot -->
+            <div class="max-w-96 relative order-1 lg:order-2">
+              <!-- Background image -->
+              <a
+                href="https://17mariya17.github.io/calculator/"
+                target="_blank"
+                class=""
+              >
+                <img
+                  src="../assets/images/green-background-calculator.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <!-- Yellow: Used tools -->
+            <div class="max-w-80 relative order-3 pb-5 md:pb-0">
+              <!-- Background image -->
+              <div class="">
+                <img src="../assets/images/yellow-background.png" alt="" />
+              </div>
+              <!-- Text -->
+              <div class="absolute z-30 top-14 sm:top-18 inset-x-0 px-10">
+                <!-- Description -->
+                <h1
+                  class="text-amber-600 sm:text-3xl text-2xl font-bold text-center sm:pt-2 pt-0"
+                >
+                  Used tools
+                </h1>
+                <!-- Tools list -->
+                <ul class="list-disc text-wrap sm:pt-5 pt-3 ul-2">
+                  <!-- Tools list -->
+                  <!-- JavaScript -->
+                  <li class="flex flex-wrap flex-row gap-2">
+                    <img
+                      class="w-4 h-4 my-auto"
+                      src="../assets/images/js.png"
+                      alt=""
+                    />
+                    <p class="italic">JavaScript</p>
+                  </li>
+                  <!-- SCSS -->
+                  <li class="flex flex-wrap flex-row gap-2">
+                    <img
+                      class="w-4 h-4 my-auto"
+                      src="../assets/images/css.png"
+                      alt=""
+                    />
+                    <p class="italic">SCSS</p>
+                  </li>
+                  <!-- HTML -->
+                  <li class="flex flex-wrap flex-row gap-2">
+                    <img
+                      class="w-4 h-4 my-auto"
+                      src="../assets/images/html.png"
+                      alt=""
+                    />
+                    <p class="italic">HTML</p>
+                  </li>
+                  <!-- Figma -->
+                  <li class="flex flex-wrap flex-row gap-2">
+                    <img
+                      class="w-4 h-4 my-auto"
+                      src="../assets/images/figma.png"
+                      alt=""
+                    />
+                    <p class="italic">Figma</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper slide: Avatar Generator  -->
+          <div class="swiper-slide !flex !justify-around !flex-wrap !gap-1">
+            <!-- Pink: Project description -->
+            <div class="max-w-72 relative order-2 lg:order-1">
+              <!-- Background image -->
+              <div class="">
+                <img src="../assets/images/pink-background.png" alt="" />
+              </div>
+              <!-- Text -->
+              <div class="absolute z-30 top-14 sm:top-18 inset-x-0 px-10">
+                <!-- Description -->
+                <h1 class="text-rose-500 text-3xl font-bold text-center pt-2">
+                  Avatar Generator
+                </h1>
+                <p class="text-sm text-wrap text-justify pt-5 italic">
+                  A simple Avatar Generator created to practice HTML and CSS
+                </p>
+              </div>
+            </div>
+            <!-- Green: Website screenshot -->
+            <div class="max-w-96 relative order-1 lg:order-2">
+              <!-- Background image -->
+              <a
+                href="https://17mariya17.github.io/cards/"
+                target="_blank"
+                class=""
+              >
+                <img src="../assets/images/avatars.png" alt="" />
+              </a>
+            </div>
+            <!-- Yellow: Used tools -->
+            <div class="max-w-80 relative order-3 pb-5 md:pb-0">
+              <!-- Background image -->
+              <div class="">
+                <img src="../assets/images/yellow-background.png" alt="" />
+              </div>
+              <!-- Text -->
+              <div class="absolute z-30 top-14 sm:top-18 inset-x-0 px-10">
+                <!-- Description -->
+                <h1 class="text-amber-600 text-3xl font-bold text-center pt-2">
+                  Used tools
+                </h1>
+                <!-- Tools list -->
+                <ul class="list-disc text-wrap pt-5 ul-2">
+                  <!-- Tools list -->
+                  <!-- SCSS -->
+                  <li class="flex flex-wrap flex-row gap-2">
+                    <img
+                      class="w-4 h-4 my-auto"
+                      src="../assets/images/css.png"
+                      alt=""
+                    />
+                    <p class="italic">CSS</p>
+                  </li>
+                  <!-- HTML -->
+                  <li class="flex flex-wrap flex-row gap-2">
+                    <img
+                      class="w-4 h-4 my-auto"
+                      src="../assets/images/html.png"
+                      alt=""
+                    />
+                    <p class="italic">HTML</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Meme slide -->
           <div class="swiper-slide !flex !justify-center">
-            <div>
+            <div class="sm:pt-0 pt-40">
               <img src="../assets/images/aint-much-meme.png" alt="" />
             </div>
           </div>
         </div>
-        <!-- If we need pagination -->
-        <!-- <div class="swiper-pagination md:!hidden !block"></div> -->
 
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev !text-white"></div>
@@ -746,13 +816,13 @@
     <!--Experience & Education section -->
     <div class="relative">
       <!--Title -->
-      <div id="experience" class="max-w-80 px-3 mx-auto pt-7">
+      <div id="experience" class="max-w-80 px-5 mx-auto pt-14">
         <img src="../assets/images/exp.png" alt="" />
         <img class="sm:mx-0 mx-auto" src="../assets/images/roww.png" alt="" />
       </div>
       <!--Columns -->
       <div
-        class="flex flex-wrap flex-row justify-center sm:justify-around pt-5 gap-2 md:gap-5 px-3 sm:px-5 lg:px-10"
+        class="flex flex-wrap flex-row justify-center sm:justify-around pt-5 gap-2 md:gap-5 px-5 lg:px-10"
       >
         <!--Experience column -->
         <div class="flex flex-wrap flex-col md:text-start text-center">
@@ -795,7 +865,7 @@
             Intern
           </p>
           <p
-            class="text-green-600 md:text-sm font-bold md:text-start text-center lg:pb-8"
+            class="text-green-600 md:text-sm font-bold md:text-start text-center md:pb-8"
           >
             (July 2020 - March 2021)
           </p>
@@ -821,7 +891,7 @@
             Management and Business Administration
           </p>
           <p
-            class="text-green-600 md:text-sm font-bold md:text-start text-center"
+            class="text-green-600 md:text-sm font-bold md:text-start text-center md:pb-8"
           >
             (September 2020 - June 2022)
           </p>
@@ -834,13 +904,13 @@
       </div>
       <!--Yellow flower - visible on lg -->
       <div
-        class="hidden lg:block h-auto max-w-24 z-30 absolute bottom-20 right-96"
+        class="block lg:block sm:hidden h-auto sm:max-w-24 max-w-20 z-30 absolute bottom-80 right-0 lg:bottom-20 lg:right-96"
       >
         <img src="../assets/images/flower_yellow.png" alt="" />
       </div>
       <!-- White flower - visible on lg -->
       <div
-        class="hidden lg:block max-w-16 z-30 absolute top-20 right-44 xl:right-56"
+        class="block lg:block sm:hidden max-w-16 z-30 absolute left-0 top-32 lg:top-20 lg:right-44 xl:right-56 lg:left-auto"
       >
         <img src="../assets/images/flo.png" alt="" />
       </div>
@@ -874,7 +944,7 @@
     <!--Contacts section -->
     <div
       id="contacts"
-      class="carboard-background-image px-3 sm:px-5 lg:px-10 pt-5 pb-7"
+      class="carboard-background-image px-3 sm:px-5 lg:px-10 pt-5 pb-12 relative"
     >
       <!--Title -->
       <div class="max-w-64 px-3 mx-auto">
@@ -882,17 +952,79 @@
       </div>
       <!--Columns -->
       <div
-        class="flex flex-wrap flex-row justify-center sm:justify-around pt-5 gap-2 md:gap-5 px-3 sm:px-5 lg:px-10"
+        class="flex flex-wrap flex-row justify-center sm:justify-around pt-7 gap-2 md:gap-5 px-3 lg:px-56"
       >
-        <p class="text-rose-700 text-lg font-bold">17 marichka17@gmail.com</p>
-        <p class="text-rose-700 text-lg font-bold">
-          +380968696475 <br />
-          +48536075125
-        </p>
-        <p class="text-rose-700 text-lg font-bold">
-          @mariahrytsenko <br />
-          @17Mariya17
-        </p>
+        <!--Mail -->
+        <div class="flex flex-wrap flex-row gap-3 my-auto">
+          <img class="w-5 my-auto" src="../assets/images/mail.png" alt="" />
+          <p class="text-rose-700 sm:text-lg font-bold">
+            17 marichka17@gmail.com
+          </p>
+        </div>
+        <!--Phones -->
+        <div class="flex flex-wrap flex-col">
+          <div class="flex flex-wrap flex-row gap-3">
+            <img class="w-5 my-auto" src="../assets/images/phone.png" alt="" />
+            <p class="text-rose-700 sm:text-lg font-bold">+48536075125</p>
+          </div>
+          <div class="flex flex-wrap flex-row gap-3">
+            <img class="w-5 my-auto" src="../assets/images/phone.png" alt="" />
+            <p class="text-rose-700 sm:text-lg font-bold">+380968696475</p>
+          </div>
+        </div>
+        <!--Behance & Github -->
+        <div class="flex flex-wrap flex-col">
+          <div class="flex flex-wrap flex-row gap-3">
+            <img
+              class="w-5 my-auto"
+              src="../assets/images/behance.png"
+              alt=""
+            />
+            <a
+              href="https://www.behance.net/mariahrytsenko"
+              target="_blank"
+              class="text-rose-700 sm:text-lg font-bold"
+              >@mariahrytsenko</a
+            >
+          </div>
+          <div class="flex flex-wrap flex-row gap-3">
+            <img class="w-5 my-auto" src="../assets/images/github.png" alt="" />
+            <a
+              href="https://github.com/17Mariya17"
+              target="_blank"
+              class="text-rose-700 sm:text-lg font-bold"
+              >@17Mariya17</a
+            >
+          </div>
+        </div>
+
+        <!--Cat on the bottom of section -->
+        <div
+          class="hidden lg:block h-auto max-w-56 mt-6 z-40 absolute bottom-0 lg:left-10"
+        >
+          <img src="../assets/images/heart_eyes_cat.png" alt="" />
+        </div>
+
+        <!--Star on the bottom of section -->
+        <div
+          class="hidden lg:block h-auto max-w-56 mt-6 z-40 absolute top-10 lg:right-20"
+        >
+          <img src="../assets/images/star_2.png" alt="" />
+        </div>
+
+        <!--Paws -->
+        <!-- 1 -->
+        <div
+          class="hidden lg:block h-auto max-w-12 mt-6 z-30 absolute -top-6 left-96 rotate-[165deg]"
+        >
+          <img src="../assets/images/cat-paw.png" alt="" />
+        </div>
+        <!-- 2 -->
+        <div
+          class="hidden lg:block h-auto max-w-12 mt-6 z-30 absolute top-10 left-72 -rotate-[165deg]"
+        >
+          <img src="../assets/images/cat-paw.png" alt="" />
+        </div>
       </div>
     </div>
     <!-- Import JS file -->
