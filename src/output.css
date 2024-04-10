@@ -769,6 +769,26 @@ video {
   top: 0.75rem;
 }
 
+.right-60 {
+  right: 15rem;
+}
+
+.right-48 {
+  right: 12rem;
+}
+
+.right-32 {
+  right: 8rem;
+}
+
+.right-24 {
+  right: 6rem;
+}
+
+.right-14 {
+  right: 3.5rem;
+}
+
 .z-30 {
   z-index: 30;
 }
@@ -791,6 +811,10 @@ video {
 
 .z-10 {
   z-index: 10;
+}
+
+.-z-30 {
+  z-index: -30;
 }
 
 .order-1 {
@@ -1004,6 +1028,14 @@ video {
   max-width: 10rem;
 }
 
+.max-w-64 {
+  max-width: 16rem;
+}
+
+.max-w-28 {
+  max-width: 7rem;
+}
+
 .translate-x-full {
   --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1207,13 +1239,31 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .border-2 {
   border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-sky-500 {
   --tw-border-opacity: 1;
   border-color: rgb(14 165 233 / var(--tw-border-opacity));
+}
+
+.border-orange-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(249 115 22 / var(--tw-border-opacity));
+}
+
+.border-rose-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(244 63 94 / var(--tw-border-opacity));
 }
 
 .bg-orange-50\/50 {
@@ -1714,12 +1764,24 @@ video {
     margin-right: 1.25rem;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:max-h-56 {
     max-height: 14rem;
   }
 
   .sm\:max-h-60 {
     max-height: 15rem;
+  }
+
+  .sm\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .sm\:justify-around {
@@ -1759,6 +1821,14 @@ video {
 
   .md\:\!hidden {
     display: none !important;
+  }
+
+  .md\:max-w-96 {
+    max-width: 24rem;
+  }
+
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .md\:justify-start {
@@ -1863,6 +1933,18 @@ video {
     display: none;
   }
 
+  .lg\:max-w-2xl {
+    max-width: 42rem;
+  }
+
+  .lg\:max-w-xl {
+    max-width: 36rem;
+  }
+
+  .lg\:max-w-lg {
+    max-width: 32rem;
+  }
+
   .lg\:flex-col {
     flex-direction: column;
   }
@@ -1932,6 +2014,10 @@ video {
 
   .xl\:right-56 {
     right: 14rem;
+  }
+
+  .xl\:right-20 {
+    right: 5rem;
   }
 
   .xl\:pt-8 {
