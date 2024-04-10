@@ -171,15 +171,20 @@
       <div class="max-w-2xl">
         <img src="../assets/images/rainbow.png" alt="" />
       </div>
+      <!-- Right column -->
       <div class="flex flex-wrap flex-col lg:items-start items-center">
+        <!-- Hello & Star -->
         <div class="flex flex-wrap flex-row gap-12">
+          <!-- Hello -->
           <div class="max-w-80">
             <img src="../assets/images/hello.png" alt="" />
           </div>
+          <!-- Star -->
           <div class="hidden lg:block">
             <img src="../assets/images/star.png" alt="" />
           </div>
         </div>
+        <!-- About me text -->
         <p
           class="text-wrap text-sky-500 pb-8 md:text-lg font-bold md:ps-3 md:text-start text-center"
         >
@@ -190,12 +195,14 @@
           I consider myself a creative, detail-oriented, hardworking <br />
           person who’s willing to learn at every step of the way!
         </p>
+        <!-- Contact me button -->
         <div class="md:ps-3">
-          <button
+          <a
+            href="#contacts"
             class="bg-sky-500 rounded-3xl max-w-60 py-2 px-8 text-lg text-sky-700 font-bold buttn"
           >
             Contact me
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -511,10 +518,67 @@
       <div class="swiper h-auto">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-          <!-- Calaculator slide -->
-          <div class="swiper-slide !flex !justify-center">
-            <h1 class="text-white text-3xl">Calculator</h1>
+          <!-- Calculator slide -->
+          <div class="swiper-slide !flex !justify-around !flex-wrap !gap-5">
+            <!-- Pink: Project description -->
+            <div class="max-w-72 relative order-2 lg:order-1">
+              <!-- Background image -->
+              <div class="">
+                <img src="../assets/images/pink-background.png" alt="" />
+              </div>
+              <!-- Text -->
+              <div class="absolute z-30 top-14 sm:top-18 inset-x-0 px-10">
+                <!-- Description -->
+                <h1 class="text-center italic font-medium underline md:text-lg">
+                  Calculator
+                </h1>
+                <p class="text-sm text-wrap text-justify">Some text</p>
+                <!-- Link -->
+                <h1
+                  class="text-center italic font-medium underline pt-5 md:text-lg"
+                >
+                  Links
+                </h1>
+                <ul
+                  class="text-sm text-wrap text-justify list-disc flex flex-wrap justify-around"
+                >
+                  <li><a href="">Website</a></li>
+                  <li><a href="">Code</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Green: Website screenshot -->
+            <div class="max-w-96 relative order-1 lg:order-2">
+              <!-- Background image -->
+              <div class="">
+                <img src="../assets/images/green-background.png" alt="" />
+              </div>
+              <!-- Text -->
+              <div class="absolute z-30 top-14 sm:top-18 inset-x-0 px-10">
+                <!-- Description -->
+                <h1 class="text-center italic font-medium underline md:text-lg">
+                  Used tools
+                </h1>
+                <p class="text-sm text-wrap text-justify">Some text</p>
+              </div>
+            </div>
+            <!-- Yellow: Used tools -->
+            <div class="max-w-80 relative order-3">
+              <!-- Background image -->
+              <div class="">
+                <img src="../assets/images/yellow-background.png" alt="" />
+              </div>
+              <!-- Text -->
+              <div class="absolute z-30 top-14 sm:top-18 inset-x-0 px-10">
+                <!-- Description -->
+                <h1 class="text-center italic font-medium underline md:text-lg">
+                  Used tools
+                </h1>
+                <p class="text-sm text-wrap text-justify">Some text</p>
+              </div>
+            </div>
           </div>
+
           <!-- Test slide -->
           <div class="swiper-slide !flex !justify-center">
             <h1 class="text-white text-3xl">Calculator</h1>
@@ -626,7 +690,7 @@
       </div>
       <!-- White flower - visible on lg -->
       <div
-        class="hidden lg:block max-w-16 z-30 absolute top-20 right-36 xl:right-44"
+        class="hidden lg:block max-w-16 z-30 absolute top-20 right-44 xl:right-56"
       >
         <img src="../assets/images/flo.png" alt="" />
       </div>
